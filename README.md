@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ruby version
+3.3.5
 
-Things you may want to cover:
+## Bundler Version
+2.5.16
 
-* Ruby version
+## How to set up the app
 
-* System dependencies
+1. Clone the repository
+2. Ensure Ruby version 3.3.5 is installed
+3. Ensure Bundler version 2.5.16 is installed
+4. Install all the dependencies
+```bash
+   bundle install
+```
 
-* Configuration
+5. Migrate the database with 
+```bash
+    rails db:migrate
+```
 
-* Database creation
+6. Finally test to ensure that everything is running well 
+```bash
+    rails test
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+7. Start the server: 
+```bash
+rails server
+```
