@@ -2,6 +2,10 @@ source "https://rubygems.org"
 
 ruby "3.3.5"
 
+gem 'bootstrap-sass', '~> 3.4.1'
+
+gem 'bootstrap', '~> 5.3.2'  # Use the latest version of Bootstrap
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.5"
 
@@ -26,10 +30,10 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-gem "sassc-rails", "2.1.2"
+gem 'sassc-rails'
 
 # Use Redis adapter to run Action Cable in production
-# gem "redis", ">= 4.0.1"
+gem "redis", ">= 4.0.1"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -56,6 +60,8 @@ group :development do
   gem "web-console"
 
   gem "hotwire-livereload"
+
+  # gem "hotwire-spark"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
