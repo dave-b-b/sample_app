@@ -2,12 +2,14 @@ source "https://rubygems.org"
 
 ruby "3.3.5"
 
-gem 'bootstrap-sass', '~> 3.4.1'
+gem 'bootstrap-sass'
 
-gem 'bootstrap', '~> 5.3.2'  # Use the latest version of Bootstrap
+gem 'bcrypt'
+
+gem 'mutex_m'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.1.5"
+gem "rails", "~> 8.0.1"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
