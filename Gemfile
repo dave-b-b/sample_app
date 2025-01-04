@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 ruby "3.3.5"
 
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.4.1'
 
 gem 'bcrypt'
 
