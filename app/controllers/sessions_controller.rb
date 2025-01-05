@@ -34,6 +34,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-
+    log_out
+    redirect_to home_url, status: :see_other
   end
 end
