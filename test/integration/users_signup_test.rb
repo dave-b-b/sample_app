@@ -45,13 +45,13 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
   test 'valid user signup' do
     assert_difference 'User.count', 1 do
       post users_path, params: {
-       user:
-        {
-         name: 'David Brown',
-         email: 'user2@example.com',
-         password: 'asdfasdf',
-         password_confirmation: 'asdfasdf'
-        }
+        user:
+         {
+           name: 'David Brown',
+           email: 'user2@example.com',
+           password: 'asdfasdf',
+           password_confirmation: 'asdfasdf'
+         }
       }
       assert_response :redirect
       # The follow_redirect! allows for the page to remain so that
@@ -62,6 +62,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
       assert_select 'div.alert.alert-success'
       assert_select 'div.alert.alert-success', { count: 1, text:
                             'Welcome to the Sample App!'}
+      assert is_logged_in?
     end
   end
 
